@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const getFiles = (dir = "../../Done/libft", files = []) => {
+const getFiles = (dir = ".", files = []) => {
 	const fileList = fs.readdirSync(dir)
 	for (const file of fileList) {
 	  const name = `${dir}/${file}`
